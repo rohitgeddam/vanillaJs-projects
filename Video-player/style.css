@@ -1,0 +1,41 @@
+.controls {
+	display: flex;
+}
+
+.controls[data-state=hidden] {
+	display: none;
+	visibility: hidden;
+}
+
+.controls[data-state=visible] {
+	display: flex;
+	visibility: visible;
+}
+
+.controls .progress {
+	width: 100%;
+	height: 81%;
+	margin-top: 0.125rem;
+	border: none;
+	cursor: pointer;
+	color: #0095dd;
+	border-radius: 2px;
+}
+
+.controls button {
+	border: none;
+	cursor: pointer;
+	background: transparent;
+	outline: none;
+}
+
+.controls button:hover,
+.controls button:focus {
+	opacity: 0.5;
+}
+
+/* .controls button[data-state="play"] {
+	background-image: 
+	background-size: cover;
+	background-position: center;
+} */
